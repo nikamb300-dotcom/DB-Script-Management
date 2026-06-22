@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DB Script Management Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Database Script Management Portal</h1>
+        <p>Track Scripts, Executions, Logs & Backups</p>
+    </header>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2 id="totalScripts">120</h2>
+            <p>Total Scripts</p>
+        </div>
+
+        <div class="card">
+            <h2 id="executedScripts">98</h2>
+            <p>Executed</p>
+        </div>
+
+        <div class="card">
+            <h2 id="pendingScripts">15</h2>
+            <p>Pending</p>
+        </div>
+
+        <div class="card">
+            <h2 id="failedScripts">7</h2>
+            <p>Failed</p>
+        </div>
+
+    </div>
+
+    <section class="table-section">
+
+        <h2>Recent Script Executions</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Ticket No</th>
+                    <th>Script Name</th>
+                    <th>Requested By</th>
+                    <th>Executed By</th>
+                    <th>Status</th>
+                    <th>Backup</th>
+                </tr>
+            </thead>
+
+            <tbody id="scriptTable">
+            </tbody>
+
+        </table>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
